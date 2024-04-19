@@ -306,8 +306,8 @@ class Program
     {
         Console.CursorVisible = false;
         Console.ReadKey();
-        var digital = new DigitalClock((155, 33), true, true, true, true, true, true, true);
-        var clock = new Clock(35, 32, 28, 21 , '#' , '0' , '0' , '0' , true , digital);
+        var digital = new DigitalClock((155, 33), false, false, false, true, true, true, true);
+        var clock = new Clock(35, 32, 28, 21 , '#' , '0' , '0' , '0' , true, digital);
         var play = clock.Play();
         play.Wait();
     }
